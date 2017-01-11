@@ -7,6 +7,11 @@
 //
 
 #import "AppDelegate.h"
+#import "YHLeftDrawerController.h"
+#import "YHNavgationContrller.h"
+#import "YHBaseViewController.h"
+#import "CenterViewController.h"
+#import "LeftViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +21,22 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    
+    CenterViewController *centerVC = [[CenterViewController alloc] init];
+    self.centerNav = [[YHNavgationContrller alloc] initWithRootViewController:centerVC];
+    
+    LeftViewController *leftVC = [[LeftViewController alloc] init];
+    YHNavgationContrller *leftNav = [[YHNavgationContrller alloc] initWithRootViewController:leftVC];
+    
+    self.drawerVC = [[YHLeftDrawerController alloc] initWithLeftView:leftNav andMainView:self.centerNav];
+    
+    _window.rootViewController = self.drawerVC;
+    
+    
+    [_window makeKeyAndVisible];
+    
     return YES;
 }
 

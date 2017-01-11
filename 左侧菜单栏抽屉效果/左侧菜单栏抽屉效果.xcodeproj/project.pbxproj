@@ -16,7 +16,8 @@
 		7EBB3B881E25D3F700E810DA /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EBB3B871E25D3F700E810DA /* LeftViewController.m */; };
 		7EBB3B8B1E25D40300E810DA /* CenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EBB3B8A1E25D40300E810DA /* CenterViewController.m */; };
 		7EBB3B8E1E25D41300E810DA /* OtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EBB3B8D1E25D41300E810DA /* OtherViewController.m */; };
-		7EBB3B911E25D4EA00E810DA /* YHNavgationContrller.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EBB3B901E25D4EA00E810DA /* YHNavgationContrller.m */; };
+		7EBB3B951E25DA4F00E810DA /* YHNavgationContrller.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EBB3B941E25DA4F00E810DA /* YHNavgationContrller.m */; };
+		7EBB3B981E25DA9600E810DA /* YHBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EBB3B971E25DA9600E810DA /* YHBaseViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,8 +38,10 @@
 		7EBB3B8A1E25D40300E810DA /* CenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CenterViewController.m; sourceTree = "<group>"; };
 		7EBB3B8C1E25D41300E810DA /* OtherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OtherViewController.h; sourceTree = "<group>"; };
 		7EBB3B8D1E25D41300E810DA /* OtherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OtherViewController.m; sourceTree = "<group>"; };
-		7EBB3B8F1E25D4EA00E810DA /* YHNavgationContrller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHNavgationContrller.h; sourceTree = "<group>"; };
-		7EBB3B901E25D4EA00E810DA /* YHNavgationContrller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHNavgationContrller.m; sourceTree = "<group>"; };
+		7EBB3B931E25DA4F00E810DA /* YHNavgationContrller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHNavgationContrller.h; sourceTree = "<group>"; };
+		7EBB3B941E25DA4F00E810DA /* YHNavgationContrller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHNavgationContrller.m; sourceTree = "<group>"; };
+		7EBB3B961E25DA9600E810DA /* YHBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHBaseViewController.h; sourceTree = "<group>"; };
+		7EBB3B971E25DA9600E810DA /* YHBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHBaseViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,8 +77,7 @@
 				7EBB3B7F1E25D31700E810DA /* LeftSlideViewController */,
 				7EBB3B6B1E25D1FF00E810DA /* AppDelegate.h */,
 				7EBB3B6C1E25D1FF00E810DA /* AppDelegate.m */,
-				7EBB3B8F1E25D4EA00E810DA /* YHNavgationContrller.h */,
-				7EBB3B901E25D4EA00E810DA /* YHNavgationContrller.m */,
+				7EBB3B921E25DA4F00E810DA /* Main */,
 				7EBB3B861E25D3F700E810DA /* LeftViewController.h */,
 				7EBB3B871E25D3F700E810DA /* LeftViewController.m */,
 				7EBB3B891E25D40300E810DA /* CenterViewController.h */,
@@ -107,6 +109,17 @@
 				7EBB3B841E25D38600E810DA /* UIView_extra.m */,
 			);
 			path = LeftSlideViewController;
+			sourceTree = "<group>";
+		};
+		7EBB3B921E25DA4F00E810DA /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				7EBB3B931E25DA4F00E810DA /* YHNavgationContrller.h */,
+				7EBB3B941E25DA4F00E810DA /* YHNavgationContrller.m */,
+				7EBB3B961E25DA9600E810DA /* YHBaseViewController.h */,
+				7EBB3B971E25DA9600E810DA /* YHBaseViewController.m */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,9 +196,10 @@
 				7EBB3B881E25D3F700E810DA /* LeftViewController.m in Sources */,
 				7EBB3B851E25D38600E810DA /* UIView_extra.m in Sources */,
 				7EBB3B821E25D37400E810DA /* YHLeftDrawerController.m in Sources */,
+				7EBB3B951E25DA4F00E810DA /* YHNavgationContrller.m in Sources */,
 				7EBB3B6A1E25D1FF00E810DA /* main.m in Sources */,
 				7EBB3B8E1E25D41300E810DA /* OtherViewController.m in Sources */,
-				7EBB3B911E25D4EA00E810DA /* YHNavgationContrller.m in Sources */,
+				7EBB3B981E25DA9600E810DA /* YHBaseViewController.m in Sources */,
 				7EBB3B8B1E25D40300E810DA /* CenterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,6 +7,10 @@
 //
 
 #import "CenterViewController.h"
+#import "AppDelegate.h"
+#import "YHLeftDrawerController.h"
+
+//#define vBackBarButtonItemName  @"backArrow.png"
 
 @interface CenterViewController ()
 
@@ -16,8 +20,49 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+//    self.view.backgroundColor = [UIColor orangeColor];
+
+    self.title = @"主界面";
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    UIButton *menuBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    menuBtn.frame = CGRectMake(0, 0, 20, 18);
+    [menuBtn setBackgroundImage:[UIImage imageNamed:@"menu"] forState:UIControlStateNormal];
+    [menuBtn addTarget:self action:@selector(openOrCloseLeftList) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:menuBtn];
+    
 }
+
+
+- (void) openOrCloseLeftList
+{
+    AppDelegate *tempAppDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    
+    if (tempAppDelegate.drawerVC.closed)
+    {
+        [tempAppDelegate.drawerVC openLeftView];
+    }
+    else
+    {
+        [tempAppDelegate.drawerVC closeLeftView];
+    }
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    NSLog(@"viewWillDisappear");
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    NSLog(@"viewWillAppear");
+}
+
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
