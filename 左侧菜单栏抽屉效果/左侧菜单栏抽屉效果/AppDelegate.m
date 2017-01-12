@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 #import "YHLeftDrawerController.h"
 #import "YHNavgationContrller.h"
-#import "YHBaseViewController.h"
+//#import "YHBaseViewController.h"
 #import "CenterViewController.h"
 #import "LeftViewController.h"
 
@@ -28,9 +28,9 @@
     self.centerNav = [[YHNavgationContrller alloc] initWithRootViewController:centerVC];
     
     LeftViewController *leftVC = [[LeftViewController alloc] init];
-    YHNavgationContrller *leftNav = [[YHNavgationContrller alloc] initWithRootViewController:leftVC];
+//    YHNavgationContrller *leftNav = [[YHNavgationContrller alloc] initWithRootViewController:leftVC];
     
-    self.drawerVC = [[YHLeftDrawerController alloc] initWithLeftView:leftNav andMainView:self.centerNav];
+    self.drawerVC = [[YHLeftDrawerController alloc] initWithLeftView:leftVC andMainView:self.centerNav];
     
     _window.rootViewController = self.drawerVC;
     
